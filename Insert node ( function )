@@ -1,5 +1,6 @@
 
 // creating node class
+
 class Node
 {
 public:
@@ -16,8 +17,10 @@ public:
 Node* insertNode(Node *head, int pos, int data)
 {
     
- int len=0;
+  int len=0;
+  
   Node *temp=head;
+  
   while(temp!=NULL)
   {
     len++;
@@ -32,30 +35,33 @@ Node* insertNode(Node *head, int pos, int data)
     head=n;
     return head;
   }
+  
   // if insertion outside the LL
   else if (pos>=len)
   {
     return head;
   }
+  
   // if insertion at middle
   else
   {
-      Node *temp1=head;
-      Node *n=new Node(data);
+    Node *temp1=head;
+    Node *n=new Node(data);
     int i =0;
+    
     while(i<pos-1)
     {
       temp1=temp1->next;
       i++;
     }
+    
     Node *x=temp1->next;
     temp1->next=n;
     n->next=x;
     return head;
     
   }
-   
-  }
+ }
     
 
 
