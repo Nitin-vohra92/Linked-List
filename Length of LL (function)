@@ -22,8 +22,8 @@ int length(Node *head)
   Node*temp=head;
   while(temp!=NULL)
   {
-  
-    len++;
+  //increasing length by 1 and iterating the list
+    len=len+1;
     temp=temp->next;
  
  }
