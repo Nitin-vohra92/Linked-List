@@ -23,7 +23,7 @@ void printIthNode(Node *head, int i)
     return;
     c=c+1;
     temp=temp->next;
-    //similar to as i
+    //iterating till ith node
   }
   cout<<temp->data;
 }
