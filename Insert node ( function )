@@ -54,7 +54,7 @@ Node* insertNode(Node *head, int pos, int data)
       temp1=temp1->next;
       i++;
     }
-    
+    //inserting node at ith position
     Node *x=temp1->next;
     temp1->next=n;
     n->next=x;
