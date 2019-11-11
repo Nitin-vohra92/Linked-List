@@ -19,10 +19,11 @@ void printIthNode(Node *head, int i)
   
   while(c<i)
   {
-    if(temp ==NULL)
+    if(temp == NULL)
     return;
-    c++;
-    temp=temp->next;//similar to as i
+    c=c+1;
+    temp=temp->next;
+    //iterating till ith node
   }
   cout<<temp->data;
 }
