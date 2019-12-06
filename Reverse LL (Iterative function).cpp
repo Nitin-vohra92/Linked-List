@@ -10,6 +10,7 @@ public:
     }
 };
 
+
 node* rev_linkedlist_itr(node* head)
 {
    
@@ -24,7 +25,9 @@ node* rev_linkedlist_itr(node* head)
     previous=current;
     current=next;
   }
+
   head=previous;
+  
   return head;
   
 }
