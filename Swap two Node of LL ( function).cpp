@@ -1,4 +1,5 @@
 // creating class node
+
 class node
 {
 public:
@@ -10,6 +11,7 @@ public:
         this->next=NULL;
     }
 };
+
 node* swap_nodes(node *head,int i,int j)
 {
  node*p1=head;
